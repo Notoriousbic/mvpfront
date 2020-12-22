@@ -1,19 +1,15 @@
 <template>
   <div id="app">
-    <Header></Header>
-    <br>
-    <OutterBody></OutterBody>
+    <router-view />
   </div>
 </template>
 
 <script>
-import Header from "./components/Header.vue"
-import OutterBody from "./components/OutterBody.vue"
 
 export default {
   name: "App",
   components: {
-    Header, OutterBody,
+   
 
   }
 };

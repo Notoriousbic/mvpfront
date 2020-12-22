@@ -1,16 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+<div id="app">
+    <Header></Header>
+    <OutterBody></OutterBody>
+    <br>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+import Header from "../components/Header.vue"
+import OutterBody from "../components/OutterBody.vue"
+import Footer from "../components/Footer.vue"
 
-export default {
-  name: "Home",
-  components: {
-    
-  }
-};
+    export default {
+        components: {
+            Header, OutterBody, Footer,
+        },
+        
+    }
 </script>
+
+<style scoped>
+
+</style>
